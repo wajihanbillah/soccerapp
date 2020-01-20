@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">My Soccer</string>
+
+    //Label
+    <string name="label_soccer_league">Soccer League List</string>
+    <string name="label_soccer_type">Soccer</string>
+    <string name="label_league_detail">League Detail</string>
+    <string name="label_last_match">Last Match</string>
+    <string name="label_next_match">Next Match</string>
+    <string name="label_minus">-</string>
+    <string name="label_search">Search Event</string>
+    <string name="label_event_detail">Event Detail</string>
+    <string name="label_error">Error</string>
+
+    //Action
+    <string name="action_more">More</string>
+    <string name="action_hide">Hide</string>
+
+    //Format
+    <string name="format_score">%s : %s</string>
+    <string name="format_country">Country : %s</string>
+    <string name="format_year_formed">Year Formed : %s</string>
+    <string name="format_url">http://%s</string>
+    <string name="format_date_api">yyyy-MM-dd hh:mm:ss</string>
+    <string name="format_date_api_empty_date">hh:mm:ss</string>
+    <string name="format_date_api_empty_time">yyyy-MM-dd</string>
+    <string name="format_date_new">dd MMMM yyyy | HH:mm:ss Z</string>
+    <string name="format_date_new_empty_date">HH:mm:ss Z</string>
+    <string name="format_date_new_empty_time">dd MMMM yyyy</string>
+
+    //Error
+    <string name="error_message">Couldn\'t load data</string>
+
+    //Title
+    <string name="title_empty">No Data</string>
+
+    //Message
+    <string name="message_empty">Currently, data is empty</string>
+    <string name="label_search_match">Search Match</string>
+    <string name="favorites">Favorite</string>
+    <string name="label_favorite">My Favorite Event</string>
+
+    <string-array name="list_of_event_detail_category">
+        <item>Goal Details</item>
+        <item>Red Cards</item>
+        <item>Yellow Cards</item>
+        <item>Formation</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="label_standings">Standings</string>
+    <string name="label_match">Match</string>
+    <string name="label_team">Team</string>
+    <string name="label_mp">MP</string>
+    <string name="label_w">W</string>
+    <string name="label_d">D</string>
+    <string name="label_l">L</string>
+    <string name="label_p">P</string>
+    <string name="label_search_team">Search Team</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_team_detail">Team Detail</string>
+    <string name="label_team_info">Team Info</string>
+    <string name="label_player">Player</string>
+    <string name="label_alternate_name">Alternate Name</string>
+    <string name="label_description">Description</string>
+    <string name="label_social_media">Social Media</string>
+    <string name="label_no_url">URL unavailable</string>
+    <string name="label_event">Event</string>
+</resources>

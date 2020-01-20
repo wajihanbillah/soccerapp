@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3e5f5"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:weightSum="1"
+    tools:context=".presentation.splashscreen.SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:adjustViewBounds="true"
+        android:elevation="@dimen/dimen_4dp"
+        android:src="@drawable/football_icon" />
+</LinearLayout>

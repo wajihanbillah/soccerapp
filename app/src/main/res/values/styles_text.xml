@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FootballTextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="FootballTableTextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="FootballTableTextView.Bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="FootballTextView.Black">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="FootballTextView.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="FootballTextView.Bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="FootballTextView.Bold.Black">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="FootballTextView.Bold.Steel">
+        <item name="android:textColor">@color/colorSteel</item>
+    </style>
+
+    <style name="FootballTextView.Bold.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="FootballTextView.Medium">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="FootballTextView.Medium.Black">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="FootballTextView.Medium.Grey">
+        <item name="android:textColor">#212121</item>
+    </style>
+</resources>

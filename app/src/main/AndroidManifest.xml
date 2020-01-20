@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.footballapps">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/football_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/football_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity
+            android:name=".presentation.splashscreen.SplashScreenActivity"
+            android:theme="@style/AppTheme.TranslucentStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.teamdetail.TeamDetailActivity" />
+        <activity android:name=".presentation.searchteam.SearchTeamActvitiy" />
+        <activity android:name=".presentation.favorite.FavoriteActivity" />
+        <activity android:name=".presentation.searchevent.SearchEventActivity" />
+        <activity android:name=".presentation.eventdetail.EventDetailActivity" />
+        <activity android:name=".presentation.leaguedetail.LeagueDetailActivity" />
+        <activity android:name=".presentation.main.MainActivity" />
+    </application>
+</manifest>

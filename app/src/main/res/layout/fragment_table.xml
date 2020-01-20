@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp"
+    tools:context=".presentation.leaguedetail.LeagueDetailActivity">
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/msvTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/default_empty_layout"
+        app:msv_errorView="@layout/default_error_layout"
+        app:msv_loadingView="@layout/default_loading_layout"
+        app:msv_viewState="content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPinkishGrey"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/FootballTableTextView.Bold"
+                    android:layout_weight="0.5"
+                    android:paddingTop="@dimen/dimen_8dp"
+                    android:paddingBottom="@dimen/dimen_8dp"
+                    android:text="@string/label_team" />
+
+                <View
+                    android:layout_width="@dimen/dimen_1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWarmGrey" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/FootballTableTextView.Bold"
+                    android:text="@string/label_mp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/FootballTableTextView.Bold"
+                    android:text="@string/label_w" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/FootballTableTextView.Bold"
+                    android:text="@string/label_d" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/FootballTableTextView.Bold"
+                    android:text="@string/label_l"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/FootballTableTextView.Bold"
+                    android:text="@string/label_p" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="true" />
+        </LinearLayout>
+    </com.kennyc.view.MultiStateView>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sample_league_name">Argentinian Primera Division</string>
+    <string name="sample_country">Argentina</string>
+    <string name="sample_description"><![CDATA[The Primera División (Spanish pronunciation: ; English: First Division), named Superliga Argentina (English: Argentine Superleague) since the 2017–18 season, is a professional football league in Argentina, organised by the homonymous entity, that is administrated independently and has its own statute. Nevertheless, the Superliga is contractually linked with the main football body, the Argentine Football Association (AFA) that had been organising all the championships from 1893 to 2017. The Primera División is the country\'s premier football division and is at the top of the Argentine football league system. It operates on a system of promotion and relegation with the Primera B Nacional (second division), with the teams placed lowest at the end of the season being relegated. The season runs from August to May. In 1891 Argentina was the first country outside the United Kingdom to establish a football league. In the early years, only teams from Buenos Aires and Rosario were affiliated to the national association. Teams from other cities would join in later years. The Primera División turned professional in 1931 when 18 clubs broke away from the amateur leagues to form a professional one. Since then, the season has been contested annually in four different formats and calendars. The league has been under its current format since the 2015 season. The Argentine championship was ranked in the top 10 as one of the strongest leagues in the world (for the 1st January 2015 – 31 December 2015 period) by the International Federation of Football History & Statistics (IFFHS). Argentina placed 4th after La Liga (Spain), Serie A (Italy) and Bundesliga (Germany).]]></string>
+    <string name="sample_date_time">2019–09–01 | 00:00:00</string>
+    <string name="sample_score">1 : 1</string>
+    <string name="sample_home_team">Racing Club</string>
+    <string name="sample_away_team">Godoy Cruz</string>
+    <string name="sample_year_formed">1891</string>
+    <string name="sample_event_name">Racing Club vs Godoy Cruz</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuMatch"
+        android:enabled="true"
+        android:icon="@drawable/ic_football_field"
+        android:title="@string/label_match"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menuStandings"
+        android:enabled="true"
+        android:icon="@drawable/ic_table_grid"
+        android:title="@string/label_standings"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menuTeam"
+        android:enabled="true"
+        android:icon="@drawable/ic_teams"
+        android:title="@string/label_team"
+        app:showAsAction="ifRoom" />
+</menu>

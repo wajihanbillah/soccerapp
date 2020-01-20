@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.teamdetail.TeamDetailActivity">
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/msvTeamInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/default_empty_layout"
+        app:msv_errorView="@layout/default_error_layout"
+        app:msv_loadingView="@layout/default_loading_layout"
+        app:msv_viewState="content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/FootballTextView.Bold.Steel"
+                android:text="@string/label_alternate_name"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAlternateName"
+                style="@style/FootballTextView.Black"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:textSize="@dimen/text_size_14sp"
+                tools:text="@string/sample_country" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/FootballTextView.Bold.Steel"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/label_description"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDescription"
+                style="@style/FootballTextView.Black"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:textSize="@dimen/text_size_14sp"
+                tools:text="@string/sample_country" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/FootballTextView.Bold.Steel"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/label_social_media"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_8dp">
+
+                <ImageButton
+                    android:id="@+id/btnWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/dimen_8dp"
+                    android:src="@drawable/ic_website_icon" />
+
+                <ImageButton
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/dimen_8dp"
+                    android:src="@drawable/ic_fb_icon" />
+
+                <ImageButton
+                    android:id="@+id/btnTwitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/dimen_8dp"
+                    android:src="@drawable/ic_twitter_icon" />
+
+                <ImageButton
+                    android:id="@+id/btnInstagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/dimen_8dp"
+                    android:src="@drawable/ic_instagram_icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.kennyc.view.MultiStateView>
+</androidx.core.widget.NestedScrollView>

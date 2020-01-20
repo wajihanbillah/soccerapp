@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_24dp"
+    android:backgroundTint="@color/colorPrimaryLight"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/dimen_16dp"
+    app:cardElevation="@dimen/dimen_1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEventName"
+            style="@style/FootballTextView.Bold.White"
+            android:background="@drawable/bg_rounded_pink"
+            android:padding="@dimen/dimen_8dp"
+            android:textSize="@dimen/text_size_18sp"
+            tools:text="@string/sample_event_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEventDateTime"
+            style="@style/FootballTextView.Medium.Black"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            tools:text="@string/sample_date_time" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgBadgeHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:adjustViewBounds="true" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTeamHome"
+                    style="@style/FootballTextView.Medium.Grey"
+                    android:background="@drawable/bg_rounded_orange"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_6dp"
+                    tools:text="@string/sample_home_team" />
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvScore"
+                style="@style/FootballTextView.Bold.White"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_square_accent"
+                android:gravity="center"
+                android:padding="@dimen/dimen_8dp"
+                android:textSize="@dimen/text_size_24sp"
+                tools:text="@string/sample_score" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgBadgeAway"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:adjustViewBounds="true" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTeamAway"
+                    style="@style/FootballTextView.Medium.Grey"
+                    android:background="@drawable/bg_rounded_orange"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_6dp"
+                    tools:text="@string/sample_away_team" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

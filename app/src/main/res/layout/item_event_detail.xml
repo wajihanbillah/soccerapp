@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTeamHome"
+        style="@style/FootballTextView.Black"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_14sp"
+        tools:text="@string/sample_home_team" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCategory"
+        style="@style/FootballTextView.Bold.Black"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_14sp"
+        tools:text="@string/sample_score" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTeamAway"
+        style="@style/FootballTextView.Black"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_14sp"
+        tools:text="@string/sample_away_team" />
+</LinearLayout>

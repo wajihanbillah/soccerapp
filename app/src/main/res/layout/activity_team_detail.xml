@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".presentation.leaguedetail.LeagueDetailActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/msvTeamDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/default_empty_layout"
+        app:msv_errorView="@layout/default_error_layout"
+        app:msv_loadingView="@layout/default_loading_layout"
+        app:msv_viewState="content">
+
+        <LinearLayout
+            android:id="@+id/llTeamDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appbarLeagueDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        app:layout_collapseMode="parallax"
+                        app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+                        <ImageView
+                            android:id="@+id/imgTeamBadge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="125dp"
+                            android:layout_marginEnd="125dp"
+                            android:adjustViewBounds="true"
+                            android:backgroundTint="@color/colorPinkishGrey"
+                            android:padding="@dimen/dimen_16dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvTitle"
+                            style="@style/FootballTextView.Bold.White"
+                            android:layout_marginTop="@dimen/dimen_16dp"
+                            android:background="@drawable/bg_rounded_pink"
+                            android:padding="@dimen/dimen_12dp"
+                            android:textSize="@dimen/text_size_24sp"
+                            tools:text="Arsennal" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvDate"
+                            style="@style/FootballTextView.White"
+                            android:layout_marginTop="@dimen/dimen_16dp"
+                            android:layout_marginBottom="@dimen/dimen_16dp"
+                            android:textStyle="italic"
+                            tools:text="Since 1982" />
+                    </LinearLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_rounded_top_white"
+                    android:clipToPadding="true"
+                    android:padding="@dimen/dimen_16dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:context=".presentation.teamdetail.TeamDetailActivity">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/FootballTextView.Bold.Steel"
+                            android:text="@string/label_alternate_name"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/text_size_16sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvAlternateName"
+                            style="@style/FootballTextView.Black"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            tools:text="@string/sample_country" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/FootballTextView.Bold.Steel"
+                            android:layout_marginTop="@dimen/dimen_24dp"
+                            android:text="@string/label_description"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/text_size_16sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvDescription"
+                            style="@style/FootballTextView.Black"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            tools:text="@string/sample_country" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/FootballTextView.Bold.Steel"
+                            android:layout_marginTop="@dimen/dimen_24dp"
+                            android:text="@string/label_social_media"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/text_size_16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/dimen_8dp">
+
+                            <ImageButton
+                                android:id="@+id/btnWebsite"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_16dp"
+                                android:layout_marginRight="@dimen/dimen_16dp"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:padding="@dimen/dimen_8dp"
+                                android:src="@drawable/ic_website_icon" />
+
+                            <ImageButton
+                                android:id="@+id/btnFacebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_16dp"
+                                android:layout_marginRight="@dimen/dimen_16dp"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:padding="@dimen/dimen_8dp"
+                                android:src="@drawable/ic_fb_icon" />
+
+                            <ImageButton
+                                android:id="@+id/btnTwitter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_16dp"
+                                android:layout_marginRight="@dimen/dimen_16dp"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:padding="@dimen/dimen_8dp"
+                                android:src="@drawable/ic_twitter_icon" />
+
+                            <ImageButton
+                                android:id="@+id/btnInstagram"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_16dp"
+                                android:layout_marginRight="@dimen/dimen_16dp"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:padding="@dimen/dimen_8dp"
+                                android:src="@drawable/ic_instagram_icon" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </LinearLayout>
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>
